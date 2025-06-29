@@ -1,0 +1,395 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>আমাদের কৃষক - বাজার</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="css/marketplace.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <nav class="navbar navbar-expand-lg" style="background-color: #2b9348">
+      <div class="container">
+        <a class="navbar-brand text-light" href="#">আমাদের কৃষক</a>
+        
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarScroll"
+          aria-controls="navbarScroll"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <!-- মেনু আইটেম -->
+        <div class="collapse navbar-collapse" id="navbarScroll">
+          <ul
+            class="navbar-nav ms-auto d-flex w-100 justify-content-evenly text-center"
+          >
+            <li class="nav-item">
+              <a class="nav-link active text-light" aria-current="page" href="./index.html"
+                >হোম</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-light" href="#">ফসল তথ্য</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-light" href="#">রোগ চিহ্নিতকরণ</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-light" href="#">পরামর্শ</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-light" href="#">বাজার</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-light" href="#">প্রশিক্ষণ</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-light" href="#">যোগাযোগ</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-light" href="#">লগইন</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- হিরো সেকশন -->
+    <div class="hero-section">
+        <div class="container text-center">
+            <h1 class="display-4 fw-bold mb-3">তাজা কৃষি পণ্যের বাজার</h1>
+            <p class="lead mb-4">সরাসরি কৃষকের কাছ থেকে পণ্য কিনুন</p>
+            <div class="row justify-content-center">
+                <div class="col-md-8">
+                    <div class="input-group mb-3">
+                        <input type="text" class="form-control form-control-lg" placeholder="পণ্য খুঁজুন">
+                        <button class="btn btn-primary" type="button">
+                            <i class="fas fa-search me-1"></i> খুঁজুন
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- মূল কন্টেন্ট -->
+    <div class="container">
+        <div class="row">
+            <!-- ফিল্টার সাইডবার -->
+            <div class="col-lg-3">
+                <div class="filter-card">
+                    <h5 class="mb-3">ফিল্টার</h5>
+                    
+                    <div class="mb-4">
+                        <h6 class="mb-2">ক্যাটাগরি</h6>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" id="vegetables" checked>
+                            <label class="form-check-label" for="vegetables">শাকসবজি</label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" id="fruits" checked>
+                            <label class="form-check-label" for="fruits">ফল</label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" id="grains" checked>
+                            <label class="form-check-label" for="grains">শস্য</label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" id="dairy" checked>
+                            <label class="form-check-label" for="dairy">দুগ্ধজাত</label>
+                        </div>
+                    </div>
+                    
+                    <div class="mb-4">
+                        <h6 class="mb-2">দামের রেঞ্জ</h6>
+                        <div class="d-flex justify-content-between mb-2">
+                            <span>৳১০</span>
+                            <span>৳৫০০০</span>
+                        </div>
+                        <input type="range" class="form-range" min="10" max="5000" step="10">
+                        <div class="d-flex justify-content-between mt-2">
+                            <input type="number" class="form-control form-control-sm w-45" placeholder="ন্যূনতম" value="10">
+                            <input type="number" class="form-control form-control-sm w-45" placeholder="সর্বোচ্চ" value="5000">
+                        </div>
+                    </div>
+                    
+                    <div class="mb-4">
+                        <h6 class="mb-2">খামারের ধরন</h6>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" id="organic">
+                            <label class="form-check-label" for="organic">জৈব</label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" id="traditional">
+                            <label class="form-check-label" for="traditional">প্রথাগত</label>
+                        </div>
+                    </div>
+                    
+                    <div class="mb-4">
+                        <h6 class="mb-2">অবস্থান</h6>
+                        <select class="form-select">
+                            <option selected>সব স্থান</option>
+                            <option>১০ কিমি এর মধ্যে</option>
+                            <option>২৫ কিমি এর মধ্যে</option>
+                            <option>৫০ কিমি এর মধ্যে</option>
+                            <option>১০০ কিমি এর মধ্যে</option>
+                        </select>
+                    </div>
+                    
+                    <button class="btn btn-primary w-100">ফিল্টার প্রয়োগ করুন</button>
+                    <button class="btn btn-outline-secondary w-100 mt-2">রিসেট</button>
+                </div>
+            </div>
+            
+            <!-- পণ্য তালিকা -->
+            <div class="col-lg-9">
+                <div class="d-flex justify-content-between align-items-center mb-4">
+                    <h4 class="mb-0">তাজা পণ্য</h4>
+                    <div class="d-flex">
+                        <div class="me-3">
+                            <label class="form-label">সাজান:</label>
+                            <select class="form-select form-select-sm">
+                                <option>জনপ্রিয়তা</option>
+                                <option>দাম: কম থেকে বেশি</option>
+                                <option>দাম: বেশি থেকে কম</option>
+                                <option>নতুন প্রথম</option>
+                                <option>গ্রাহক রেটিং</option>
+                            </select>
+                        </div>
+                        <div>
+                            <label class="form-label">পৃষ্ঠায় আইটেম:</label>
+                            <select class="form-select form-select-sm">
+                                <option>১২</option>
+                                <option>২৪</option>
+                                <option>৩৬</option>
+                                <option>৪৮</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="row">
+                    <!-- পণ্য কার্ড ১ -->
+                    <div class="col-md-4 col-sm-6 mb-4">
+                        <div class="product-card h-100">
+                            <img src="https://plus.unsplash.com/premium_photo-1661811820259-2575b82101bf?q=80&w=1180&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" class="product-img" alt="টমেটো">
+                            <div class="p-3">
+                                <span class="badge badge-organic mb-2">জৈব</span>
+                                <h5 class="product-title">তাজা টমেটো</h5>
+                                <a href="" class="farmer-name">দ্বারা: রাজেশ </a>
+                                <div class="d-flex justify-content-between align-items-center mt-3">
+                                    <span class="product-price">৳৪৫/কেজি</span>
+                                    <span class="product-location"><i class="fas fa-map-marker-alt"></i> ১৫ কিমি</span>
+                                </div>
+                                <div class="d-flex justify-content-between mt-3">
+                                    <button class="btn btn-sm btn-outline-primary w-100 me-2">
+                                        <i class="far fa-heart"></i>
+                                    </button>
+                                    <button class="btn btn-sm btn-primary w-100">
+                                        <i class="fas fa-cart-plus"></i> যোগ করুন
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- পণ্য কার্ড ২ -->
+                    <div class="col-md-4 col-sm-6 mb-4">
+                        <div class="product-card h-100">
+                            <img src="https://images.unsplash.com/photo-1675501344642-92d35d90fe51?q=80&w=1074&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" class="product-img" alt="আলু">
+                            <div class="p-3">
+                                <span class="badge badge-organic mb-2">প্রথাগত</span>
+                                <h5 class="product-title">নতুন আলু</h5>
+                                <a href="" class="farmer-name">দ্বারা: আব্দুল করিম</a>
+                                <div class="d-flex justify-content-between align-items-center mt-3">
+                                    <span class="product-price">৳১২০/কেজি</span>
+                                    <span class="product-location"><i class="fas fa-map-marker-alt"></i> ৩৫ কিমি</span>
+                                </div>
+                                <div class="d-flex justify-content-between mt-3">
+                                    <button class="btn btn-sm btn-outline-primary w-100 me-2">
+                                        <i class="far fa-heart"></i>
+                                    </button>
+                                    <button class="btn btn-sm btn-primary w-100">
+                                        <i class="fas fa-cart-plus"></i> যোগ করুন
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- পণ্য কার্ড ৩ -->
+                    <div class="col-md-4 col-sm-6 mb-4">
+                        <div class="product-card h-100">
+                            <img src="https://plus.unsplash.com/premium_photo-1682129071833-65eed17bcf11?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" class="product-img" alt="দুধ">
+                            <div class="p-3">
+                                
+                                <span class="badge badge-organic mb-2">জৈব</span>
+                                <h5 class="product-title">তাজা গরুর দুধ</h5>
+                                <a href="" class="farmer-name">দ্বারা: গোপাল ভান্ডারি</a>
+                                <div class="d-flex justify-content-between align-items-center mt-3">
+                                    <span class="product-price">৳৬০/লিটার</span>
+                                    <span class="product-location"><i class="fas fa-map-marker-alt"></i> ৮ কিমি</span>
+                                </div>
+                                <div class="d-flex justify-content-between mt-3">
+                                    <button class="btn btn-sm btn-outline-primary w-100 me-2">
+                                        <i class="far fa-heart"></i>
+                                    </button>
+                                    <button class="btn btn-sm btn-primary w-100">
+                                        <i class="fas fa-cart-plus"></i> যোগ করুন
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- পণ্য কার্ড ৪ -->
+                    <div class="col-md-4 col-sm-6 mb-4">
+                        <div class="product-card h-100">
+                            <img src="https://plus.unsplash.com/premium_photo-1661963447711-27f892ffe292?q=80&w=1173&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" class="product-img" alt="গম">
+                            <div class="p-3">
+                                <span class="badge badge-organic mb-2">জৈব</span>
+                                <h5 class="product-title">প্রিমিয়াম গম</h5>
+                                <a href="" class="farmer-name">দ্বারা: মরিয়ম আক্তার</a>
+                                <div class="d-flex justify-content-between align-items-center mt-3">
+                                    <span class="product-price">৳২৮/কেজি</span>
+                                    <span class="product-location"><i class="fas fa-map-marker-alt"></i> ৪২ কিমি</span>
+                                </div>
+                                <div class="d-flex justify-content-between mt-3">
+                                    <button class="btn btn-sm btn-outline-primary w-100 me-2">
+                                        <i class="far fa-heart"></i>
+                                    </button>
+                                    <button class="btn btn-sm btn-primary w-100">
+                                        <i class="fas fa-cart-plus"></i> যোগ করুন
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- পণ্য কার্ড ৫ -->
+                    <div class="col-md-4 col-sm-6 mb-4">
+                        <div class="product-card h-100">
+                            <img src="https://images.unsplash.com/photo-1590868309235-ea34bed7bd7f?q=80&w=627&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" class="product-img" alt="গাজর">
+                            <div class="p-3">
+                                <span class="badge badge-organic mb-2">প্রথাগত</span>
+                                <h5 class="product-title">তাজা গাজর</h5>
+                                <a href="" class="farmer-name">দ্বারা: নুর ইসলাম</a>
+                                <div class="d-flex justify-content-between align-items-center mt-3">
+                                    <span class="product-price">৳৩৫/কেজি</span>
+                                    <span class="product-location"><i class="fas fa-map-marker-alt"></i> ১২ কিমি</span>
+                                </div>
+                                <div class="d-flex justify-content-between mt-3">
+                                    <button class="btn btn-sm btn-outline-primary w-100 me-2">
+                                        <i class="far fa-heart"></i>
+                                    </button>
+                                    <button class="btn btn-sm btn-primary w-100">
+                                        <i class="fas fa-cart-plus"></i> যোগ করুন
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- পণ্য কার্ড ৬ -->
+                    <div class="col-md-4 col-sm-6 mb-4">
+                        <div class="product-card h-100">
+                            <img src="https://images.unsplash.com/photo-1668762924635-a3683caf32bf?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" class="product-img" alt="কলা">
+                            <div class="p-3">
+                                <span class="badge badge-organic mb-2">প্রথাগত</span>
+                                <h5 class="product-title">পাকা কলা</h5>
+                                <a href="" class="farmer-name">দ্বারা: ইমরান রাজা </a>
+                                <div class="d-flex justify-content-between align-items-center mt-3">
+                                    <span class="product-price">৳৫০/ডজন</span>
+                                    <span class="product-location"><i class="fas fa-map-marker-alt"></i> ২৫ কিমি</span>
+                                </div>
+                                <div class="d-flex justify-content-between mt-3">
+                                    <button class="btn btn-sm btn-outline-primary w-100 me-2">
+                                        <i class="far fa-heart"></i>
+                                    </button>
+                                    <button class="btn btn-sm btn-primary w-100">
+                                        <i class="fas fa-cart-plus"></i> যোগ করুন
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- পেজিনেশন -->
+                <nav aria-label="পৃষ্ঠা নেভিগেশন">
+                    <ul class="pagination justify-content-center">
+                        <li class="page-item disabled">
+                            <a class="page-link" href="#" tabindex="-1">পূর্ববর্তী</a>
+                        </li>
+                        <li class="page-item active"><a class="page-link" href="#">১</a></li>
+                        <li class="page-item"><a class="page-link" href="#">২</a></li>
+                        <li class="page-item"><a class="page-link" href="#">৩</a></li>
+                        <li class="page-item">
+                            <a class="page-link" href="#">পরবর্তী</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </div>
+
+    <!-- ফুটার -->
+    <footer class="bg-dark text-light pt-5 pb-3">
+      <div class="container">
+        <div class="row">
+
+          <!-- কলাম ১: সম্পর্কে -->
+          <div class="col-md-4 mb-4">
+            <h5 class="fw-bold text-success">আমাদের কৃষক</h5>
+            <p class="text">
+              "আমাদের কৃষক" হলো একটি ডিজিটাল প্ল্যাটফর্ম যা কৃষকদের জন্য সব ধরনের তথ্য, সেবা ও সুযোগ সহজলভ্য করে তোলে।
+            </p>
+          </div>
+
+          <!-- কলাম ২: দ্রুত লিংক -->
+          <div class="col-md-4 mb-4">
+            <h5 class="fw-bold text-success">দ্রুত লিংক</h5>
+            <ul class="list-unstyled">
+              <li><a href="#" class="text-light text-decoration-none">হোম</a></li>
+              <li><a href="#" class="text-light text-decoration-none">ফসল তথ্য</a></li>
+              <li><a href="#" class="text-light text-decoration-none">পরামর্শ</a></li>
+              <li><a href="#" class="text-light text-decoration-none">বাজার</a></li>
+              <li><a href="#" class="text-light text-decoration-none">যোগাযোগ</a></li>
+            </ul>
+          </div>
+
+          <!-- কলাম ৩: যোগাযোগ -->
+          <div class="col-md-4 mb-4">
+            <h5 class="fw-bold text-success">যোগাযোগ</h5>
+            <p class=" mb-1">📍 কৃষি ভবন, ঢাকা-১২০৫</p>
+            <p class="mb-1">📞 +৮৮০ ১৭০০ ০০০ ০০০</p>
+            <p class="">📧 support@amaderkrishok.com</p>
+
+            <!-- সোশ্যাল আইকন -->
+            <div class="mt-3">
+              <a href="#" class="text-light me-3"><i class="fab fa-facebook-f"></i></a>
+              <a href="#" class="text-light me-3"><i class="fab fa-youtube"></i></a>
+              <a href="#" class="text-light me-3"><i class="fas fa-envelope"></i></a>
+            </div>
+          </div>
+
+        </div>
+
+        <hr class="text-muted" />
+        <p class="text-center text-warning mb-0">© ২০২৫ আমাদের কৃষক. সর্বস্বত্ব সংরক্ষিত।</p>
+      </div>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
