@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>আমাদের কৃষক - কার্ট</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/cart.css">
+</head>
+<body>
+<nav class="navbar navbar-expand-lg" style="background-color: #2b9348">
+      <div class="container">
+        <!-- Left side: Logo -->
+        <a class="navbar-brand text-light" href="#">আমাদের কৃষক</a>
+
+        <!-- Toggle button for mobile -->
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarScroll"
+          aria-controls="navbarScroll"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <!-- Right side: Menu items -->
+        <div class="collapse navbar-collapse" id="navbarScroll">
+          <ul
+            class="navbar-nav ms-auto d-flex w-100 justify-content-evenly text-center"
+          >
+            <li class="nav-item">
+              <a class="nav-link active text-light" aria-current="page" href="/index.html"
+                >হোম</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-light" href="./crop_info.html">ফসল তথ্য</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-light" href="#">রোগ চিহ্নিতকরণ</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-light" href="#">পরামর্শ</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-light" href="./marketplace.html">বাজার</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-light" href="#">প্রশিক্ষণ</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-light" href="#">যোগাযোগ</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-light" href="#">লগইন</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- কার্ট কন্টেন্ট -->
+    <div class="container py-4">
+        <div class="row">
+            <div class="col-lg-8">
+                <div class="cart-header mb-3">
+                    <h4><i class="fas fa-shopping-cart text-green me-2"></i>আপনার কার্ট</h4>
+                </div>
+                
+                <!-- কার্ট আইটেম ১ -->
+                <div class="cart-item p-3">
+                    <div class="row align-items-center">
+                        <div class="col-md-2 col-4">
+                            <img src="https://images.unsplash.com/photo-1518977676601-b53f82aba655" class="product-img" alt="টমেটো">
+                        </div>
+                        <div class="col-md-5 col-8">
+                            <h6 class="mb-1">নতুন আলু</h6>
+                            <p class="small text-muted mb-2">দ্বারা: রাজেশ ফার্মস</p>
+                            <span class="badge bg-light text-dark small">জৈব</span>
+                        </div>
+                        <div class="col-md-3 col-6 mt-3 mt-md-0">
+                            <div class="d-flex align-items-center">
+                                <button class="quantity-btn">-</button>
+                                <input type="text" class="quantity-input mx-2" value="2">
+                                <button class="quantity-btn">+</button>
+                            </div>
+                        </div>
+                        <div class="col-md-2 col-6 text-md-end mt-3 mt-md-0 d-flex justify-content-evenly align-items-center">
+                            <h6 class="mb-0 text-green">৳৯০</h6>
+                            <a href="#" class="text-light small btn btn-danger btn-sm"><i class="fas fa-trash text"></i></a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- কার্ট আইটেম ২ -->
+                <div class="cart-item p-3">
+                    <div class="row align-items-center">
+                        <div class="col-md-2 col-4">
+                            <img src="https://images.unsplash.com/photo-1550258987-190a2d41a8ba" class="product-img" alt="আপেল">
+                        </div>
+                        <div class="col-md-5 col-8">
+                            <h6 class="mb-1">আনারস</h6>
+                            <p class="small text-muted mb-2">দ্বারা: হিমালয়ান অর্চার্ডস</p>
+                        </div>
+                        <div class="col-md-3 col-6 mt-3 mt-md-0">
+                            <div class="d-flex align-items-center">
+                                <button class="quantity-btn">-</button>
+                                <input type="text" class="quantity-input mx-2" value="1">
+                                <button class="quantity-btn">+</button>
+                            </div>
+                        </div>
+                        <div class="col-md-2 col-6 text-md-end mt-3 mt-md-0 d-flex justify-content-evenly align-items-center">
+                            <h6 class="mb-0 text-green">৳১২০</h6>
+                            <a href="#" class="text-light small btn btn-danger btn-sm"><i class="fas fa-trash text"></i></a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- কার্ট আইটেম ৩ -->
+                <div class="cart-item p-3">
+                    <div class="row align-items-center">
+                        <div class="col-md-2 col-4">
+                            <img src="https://plus.unsplash.com/premium_photo-1682129071833-65eed17bcf11?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" class="product-img" alt="দুধ">
+                        </div>
+                        <div class="col-md-5 col-8">
+                            <h6 class="mb-1">তাজা গরুর দুধ</h6>
+                            <p class="small text-muted mb-2">দ্বারা: গোপাল ডেয়ারি</p>
+                            <span class="badge bg-light text-dark small">জৈব</span>
+                        </div>
+                        <div class="col-md-3 col-6 mt-3 mt-md-0">
+                            <div class="d-flex align-items-center">
+                                <button class="quantity-btn">-</button>
+                                <input type="text" class="quantity-input mx-2" value="3">
+                                <button class="quantity-btn">+</button>
+                            </div>
+                        </div>
+                        <div class="col-md-2 col-6 text-md-end mt-3 mt-md-0 d-flex justify-content-evenly align-items-center">
+                            <h6 class="mb-0 text-green">৳৪০</h6>
+                            <a href="#" class="text-light small btn btn-danger btn-sm"><i class="fas fa-trash text"></i></a>
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+            
+            <div class="col-lg-4 mt-4 mt-lg-0 text-center">
+                <div class="summary-card">
+                    <h5 class="mb-4">অর্ডার সারাংশ</h5>
+                    
+                    <div class="d-flex justify-content-between mb-2">
+                        <span>পণ্যের মূল্য:</span>
+                        <span>৳৩৯০</span>
+                    </div>
+                    <div class="d-flex justify-content-between mb-2">
+                        <span>ডেলিভারি চার্জ:</span>
+                        <span>৳৫০</span>
+                    </div>
+                    <div class="d-flex justify-content-between mb-2">
+                        <span>ডিসকাউন্ট:</span>
+                        <span class="text-danger">-৳৩০</span>
+                    </div>
+                    
+                    <hr>
+                    
+                    <div class="d-flex justify-content-between mb-4">
+                        <h6>মোট মূল্য:</h6>
+                        <h5 class="text-green">৳৪১০</h5>
+                    </div>
+                    
+                    <button class="btn btn-primary w-100 py-2">
+                        <i class="fas fa-credit-card me-2"></i>পেমেন্ট সম্পন্ন করুন
+                    </button>
+                    <button class="btn btn-danger w-100 py-2 mt-4">
+                        <i class="fas fa-trash me-2"></i>কার্ট খালি করুন
+                    </button>
+                   
+                    <button class="btn btn-secondary w-100 py-2 mt-4">
+                        <a href="#" class="text-decoration-none text-light">পণ্য ব্রাউজ করুন<i class="fas fa-arrow-right ms-2"></i></a>
+                    </button>
+                </div>
+                
+                <div class="payment-methods mt-4">
+                    <img src="image/payment.png" alt="">
+                </div>
+                
+            </div>
+        </div>
+    </div>
+
+    <!-- ফুটার -->
+    <footer class="bg-dark text-light py-4 mt-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <h5>আমাদের কৃষক</h5>
+                    <p>কৃষকদের জন্য ডিজিটাল প্ল্যাটফর্ম</p>
+                </div>
+                <div class="col-md-6 text-end">
+                    <a href="#" class="text-light me-3"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" class="text-light me-3"><i class="fab fa-youtube"></i></a>
+                    <a href="#" class="text-light"><i class="fas fa-envelope"></i></a>
+                </div>
+            </div>
+            <hr class="my-3">
+            <div class="text-center">
+                <p class="mb-0">© ২০২৫ আমাদের কৃষক. সর্বস্বত্ব সংরক্ষিত।</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>বাংলাদেশের ফসলের তথ্য</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/crop_info.css">
+</head>
+<body>
+    <!-- নেভিগেশন বার -->
+<nav class="navbar navbar-expand-lg" style="background-color: #2b9348">
+      <div class="container">
+        <!-- Left side: Logo -->
+        <a class="navbar-brand text-light" href="#">আমাদের কৃষক</a>
+
+        <!-- Toggle button for mobile -->
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarScroll"
+          aria-controls="navbarScroll"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <!-- Right side: Menu items -->
+        <div class="collapse navbar-collapse" id="navbarScroll">
+          <ul
+            class="navbar-nav ms-auto d-flex w-100 justify-content-evenly text-center"
+          >
+            <li class="nav-item">
+              <a class="nav-link active text-light" aria-current="page" href="./index.html"
+                >হোম</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-light" href="./crop_info.html">ফসল তথ্য</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-light" href="#">রোগ চিহ্নিতকরণ</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-light" href="#">পরামর্শ</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-light" href="./marketplace.html">বাজার</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-light" href="#">প্রশিক্ষণ</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-light" href="#">যোগাযোগ</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-light" href="#">লগইন</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- হিরো সেকশন -->
+    <section class="hero-section text-center">
+        <div class="container">
+            <h1 class="display-4 fw-bold">বাংলাদেশের ফসল</h1>
+            <p class="lead">প্রাচীন কৃষি ঐতিহ্য ও আধুনিক চাষ পদ্ধতির সমন্বয়</p>
+            
+            <div class="search-box">
+                <div class="input-group mb-3">
+                    <input type="text" class="form-control" placeholder="ফসলের নাম খুঁজুন...">
+                    <button class="btn btn-light" type="button">
+                        <i class="fas fa-search"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ফসলের তালিকা -->
+    <section class="crop-list py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="card crop-card">
+                        <img src="https://media.assettype.com/eisamay%2F2025-05-20%2Fz8qrlkkx%2FPaddy" class="card-img-top crop-img" alt="ধান">
+                        <div class="card-body">
+                            <h5 class="card-title">ধান</h5>
+                            <p class="card-text">বাংলাদেশের প্রধান খাদ্য শস্য। আমন, আউশ ও বোরো - এই তিন প্রকার ধান বাংলাদেশে চাষ হয়।</p>
+                            <a href="#" class="btn btn-success">বিস্তারিত জানুন</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-md-4">
+                    <div class="card crop-card">
+                        <img src="https://plantix.net/bn/library/assets/custom/crop-images/wheat.jpeg" class="card-img-top crop-img" alt="গম">
+                        <div class="card-body">
+                            <h5 class="card-title">গম</h5>
+                            <p class="card-text">শীতকালীন গুরুত্বপূর্ণ শস্য। রবি মৌসুমে চাষ করা হয় এবং রুটি তৈরির প্রধান উপাদান।</p>
+                            <a href="#" class="btn btn-success">বিস্তারিত জানুন</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-md-4">
+                    <div class="card crop-card">
+                        <img src="https://www.newsbangla24.com/assets/news_images/2023/03/07/pat-ok.jpg" class="card-img-top crop-img" alt="পাট">
+                        <div class="card-body">
+                            <h5 class="card-title">পাট</h5>
+                            <p class="card-text">সোনালি আঁশ নামে পরিচিত বাংলাদেশের ঐতিহ্যবাহী অর্থকরী ফসল।</p>
+                            <a href="#" class="btn btn-success">বিস্তারিত জানুন</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-md-4">
+                    <div class="card crop-card">
+                        <img src="https://www.tbsnews.net/bangla/sites/default/files/styles/big_3/public/images/2023/11/01/potatoes-411975_1920.jpg" class="card-img-top crop-img" alt="আলু">
+                        <div class="card-body">
+                            <h5 class="card-title">আলু</h5>
+                            <p class="card-text">বাংলাদেশের দ্বিতীয় প্রধান খাদ্য শস্য। শীতকালে চাষ করা হয় এবং পুষ্টিগুণে ভরপুর।</p>
+                            <a href="#" class="btn btn-success">বিস্তারিত জানুন</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-md-4">
+                    <div class="card crop-card">
+                        <img src="https://protidinerbangladesh.com/uploads/2023/07/online/photos/New-Project-(19)-64a0ee4b5bb44.jpg" class="card-img-top crop-img" alt="মরিচ">
+                        <div class="card-body">
+                            <h5 class="card-title">মরিচ</h5>
+                            <p class="card-text">বাংলাদেশের একটি গুরুত্বপূর্ণ মসলা ফসল। রান্নায় স্বাদ বৃদ্ধির জন্য ব্যবহৃত হয়।</p>
+                            <a href="#" class="btn btn-success">বিস্তারিত জানুন</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-md-4">
+                    <div class="card crop-card">
+                        <img src="https://www.kalbela.com/assets/news_photos/2024/10/09/image_128924_1728490484.webp" class="card-img-top crop-img" alt="পেঁয়াজ">
+                        <div class="card-body">
+                            <h5 class="card-title">পেঁয়াজ</h5>
+                            <p class="card-text">বাংলাদেশের একটি অত্যাবশ্যকীয় সবজি ফসল। প্রায় সব রান্নায় ব্যবহৃত হয়।</p>
+                            <a href="#" class="btn btn-success">বিস্তারিত জানুন</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="text-center mt-4">
+                <button class="btn btn-outline-success">আরও ফসল দেখুন</button>
+            </div>
+        </div>
+    </section>
+   
+<footer class="bg-dark text-light pt-5 pb-3">
+  <div class="container">
+    <div class="row">
+
+      <!-- Column 1: About -->
+      <div class="col-md-4 mb-4">
+        <h5 class="fw-bold text-success">আমাদের কৃষক</h5>
+        <p class="text">
+          “আমাদের কৃষক” হলো একটি ডিজিটাল প্ল্যাটফর্ম যা কৃষকদের জন্য সব ধরনের তথ্য, সেবা ও সুযোগ সহজলভ্য করে তোলে।
+        </p>
+      </div>
+
+      <!-- Column 2: Quick Links -->
+      <div class="col-md-4 mb-4">
+        <h5 class="fw-bold text-success">দ্রুত লিংক</h5>
+        <ul class="list-unstyled">
+          <li><a href="#" class="text-light text-decoration-none">হোম</a></li>
+          <li><a href="#" class="text-light text-decoration-none">ফসল তথ্য</a></li>
+          <li><a href="#" class="text-light text-decoration-none">পরামর্শ</a></li>
+          <li><a href="#" class="text-light text-decoration-none">বাজার</a></li>
+          <li><a href="#" class="text-light text-decoration-none">যোগাযোগ</a></li>
+        </ul>
+      </div>
+
+      <!-- Column 3: Contact -->
+      <div class="col-md-4 mb-4">
+        <h5 class="fw-bold text-success">যোগাযোগ</h5>
+        <p class=" mb-1">📍 কৃষি ভবন, ঢাকা-১২০৫</p>
+        <p class="mb-1">📞 +880 1700 000 000</p>
+        <p class="">📧 support@amaderkrishok.com</p>
+
+        <!-- Social Icons -->
+        <div class="mt-3">
+          <a href="#" class="text-light me-3"><i class="bi bi-facebook"></i></a>
+          <a href="#" class="text-light me-3"><i class="bi bi-youtube"></i></a>
+          <a href="#" class="text-light me-3"><i class="bi bi-envelope"></i></a>
+        </div>
+      </div>
+
+    </div>
+
+    <hr class="text-muted" />
+    <p class="text-center text-warning mb-0">© ২০২৫ আমাদের কৃষক. সর্বস্বত্ব সংরক্ষিত।</p>
+  </div>
+</footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

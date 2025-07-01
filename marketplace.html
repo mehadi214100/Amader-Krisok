@@ -11,9 +11,16 @@
 </head>
 <body>
 
+    <div class="cart">
+        <a href="./cart.html">
+            <i class="fa-solid fa-cart-shopping"></i>
+            <span class="cart-count">10</span>
+        </a>
+    </div>
+
     <nav class="navbar navbar-expand-lg" style="background-color: #2b9348">
       <div class="container">
-        <a class="navbar-brand text-light" href="#">আমাদের কৃষক</a>
+        <a class="navbar-brand text-light" href="/index.html">আমাদের কৃষক</a>
         
         <button
           class="navbar-toggler"
@@ -38,7 +45,7 @@
               >
             </li>
             <li class="nav-item">
-              <a class="nav-link text-light" href="#">ফসল তথ্য</a>
+              <a class="nav-link text-light" href="./crop_info.html">ফসল তথ্য</a>
             </li>
             <li class="nav-item">
               <a class="nav-link text-light" href="#">রোগ চিহ্নিতকরণ</a>
@@ -47,7 +54,7 @@
               <a class="nav-link text-light" href="#">পরামর্শ</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link text-light" href="#">বাজার</a>
+              <a class="nav-link text-light" href="./marketplace.html">বাজার</a>
             </li>
             <li class="nav-item">
               <a class="nav-link text-light" href="#">প্রশিক্ষণ</a>
@@ -63,7 +70,7 @@
       </div>
     </nav>
 
-    <!-- হিরো সেকশন -->
+   
     <div class="hero-section">
         <div class="container text-center">
             <h1 class="display-4 fw-bold mb-3">তাজা কৃষি পণ্যের বাজার</h1>
@@ -81,7 +88,7 @@
         </div>
     </div>
 
-    <!-- মূল কন্টেন্ট -->
+   
     <div class="container">
         <div class="row">
             <!-- ফিল্টার সাইডবার -->
@@ -92,19 +99,19 @@
                     <div class="mb-4">
                         <h6 class="mb-2">ক্যাটাগরি</h6>
                         <div class="form-check">
-                            <input class="form-check-input" type="checkbox" id="vegetables" checked>
+                            <input class="form-check-input" type="checkbox" id="vegetables">
                             <label class="form-check-label" for="vegetables">শাকসবজি</label>
                         </div>
                         <div class="form-check">
-                            <input class="form-check-input" type="checkbox" id="fruits" checked>
+                            <input class="form-check-input" type="checkbox" id="fruits">
                             <label class="form-check-label" for="fruits">ফল</label>
                         </div>
                         <div class="form-check">
-                            <input class="form-check-input" type="checkbox" id="grains" checked>
+                            <input class="form-check-input" type="checkbox" id="grains">
                             <label class="form-check-label" for="grains">শস্য</label>
                         </div>
                         <div class="form-check">
-                            <input class="form-check-input" type="checkbox" id="dairy" checked>
+                            <input class="form-check-input" type="checkbox" id="dairy">
                             <label class="form-check-label" for="dairy">দুগ্ধজাত</label>
                         </div>
                     </div>
@@ -138,10 +145,10 @@
                         <h6 class="mb-2">অবস্থান</h6>
                         <select class="form-select">
                             <option selected>সব স্থান</option>
-                            <option>১০ কিমি এর মধ্যে</option>
-                            <option>২৫ কিমি এর মধ্যে</option>
-                            <option>৫০ কিমি এর মধ্যে</option>
-                            <option>১০০ কিমি এর মধ্যে</option>
+                            <option>রাজশাহী</option>
+                            <option>রংপুর</option>
+                            <option>ঢাকা</option>
+                            <option>বগুড়া</option>
                         </select>
                     </div>
                     
@@ -188,7 +195,7 @@
                                 <a href="" class="farmer-name">দ্বারা: রাজেশ </a>
                                 <div class="d-flex justify-content-between align-items-center mt-3">
                                     <span class="product-price">৳৪৫/কেজি</span>
-                                    <span class="product-location"><i class="fas fa-map-marker-alt"></i> ১৫ কিমি</span>
+                                    <span class="product-location"><i class="fas fa-map-marker-alt"></i> রাজশাহী</span>
                                 </div>
                                 <div class="d-flex justify-content-between mt-3">
                                     <button class="btn btn-sm btn-outline-primary w-100 me-2">
@@ -212,7 +219,7 @@
                                 <a href="" class="farmer-name">দ্বারা: আব্দুল করিম</a>
                                 <div class="d-flex justify-content-between align-items-center mt-3">
                                     <span class="product-price">৳১২০/কেজি</span>
-                                    <span class="product-location"><i class="fas fa-map-marker-alt"></i> ৩৫ কিমি</span>
+                                    <span class="product-location"><i class="fas fa-map-marker-alt"></i> বগুড়া</span>
                                 </div>
                                 <div class="d-flex justify-content-between mt-3">
                                     <button class="btn btn-sm btn-outline-primary w-100 me-2">
@@ -237,7 +244,7 @@
                                 <a href="" class="farmer-name">দ্বারা: গোপাল ভান্ডারি</a>
                                 <div class="d-flex justify-content-between align-items-center mt-3">
                                     <span class="product-price">৳৬০/লিটার</span>
-                                    <span class="product-location"><i class="fas fa-map-marker-alt"></i> ৮ কিমি</span>
+                                    <span class="product-location"><i class="fas fa-map-marker-alt"></i> ঢাকা</span>
                                 </div>
                                 <div class="d-flex justify-content-between mt-3">
                                     <button class="btn btn-sm btn-outline-primary w-100 me-2">
@@ -261,7 +268,7 @@
                                 <a href="" class="farmer-name">দ্বারা: মরিয়ম আক্তার</a>
                                 <div class="d-flex justify-content-between align-items-center mt-3">
                                     <span class="product-price">৳২৮/কেজি</span>
-                                    <span class="product-location"><i class="fas fa-map-marker-alt"></i> ৪২ কিমি</span>
+                                    <span class="product-location"><i class="fas fa-map-marker-alt"></i> রংপুর</span>
                                 </div>
                                 <div class="d-flex justify-content-between mt-3">
                                     <button class="btn btn-sm btn-outline-primary w-100 me-2">
@@ -285,7 +292,7 @@
                                 <a href="" class="farmer-name">দ্বারা: নুর ইসলাম</a>
                                 <div class="d-flex justify-content-between align-items-center mt-3">
                                     <span class="product-price">৳৩৫/কেজি</span>
-                                    <span class="product-location"><i class="fas fa-map-marker-alt"></i> ১২ কিমি</span>
+                                    <span class="product-location"><i class="fas fa-map-marker-alt"></i> রাজশাহী</span>
                                 </div>
                                 <div class="d-flex justify-content-between mt-3">
                                     <button class="btn btn-sm btn-outline-primary w-100 me-2">
@@ -309,7 +316,7 @@
                                 <a href="" class="farmer-name">দ্বারা: ইমরান রাজা </a>
                                 <div class="d-flex justify-content-between align-items-center mt-3">
                                     <span class="product-price">৳৫০/ডজন</span>
-                                    <span class="product-location"><i class="fas fa-map-marker-alt"></i> ২৫ কিমি</span>
+                                    <span class="product-location"><i class="fas fa-map-marker-alt"></i> বগুড়া</span>
                                 </div>
                                 <div class="d-flex justify-content-between mt-3">
                                     <button class="btn btn-sm btn-outline-primary w-100 me-2">
